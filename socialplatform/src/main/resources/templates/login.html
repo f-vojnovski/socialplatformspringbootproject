@@ -1,0 +1,16 @@
+<html xmlns:form="http://www.w3.org/1999/xhtml" xmlns="" xmlns:th="http://www.thymeleaf.org">
+    <head>
+
+    </head>
+    <body>
+        <h3>Enter your login details</h3>
+            <form name="loginForm" method="post" th:action="@{/perform_login}">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="Username"><br>
+                <label for="password"></label>
+                <input type="password" id="password" name="password"><br>
+                <button type="submit">Log in</button>
+            </form>
+
+    </body>
+</html>
